@@ -168,7 +168,7 @@ Detectar_enemigo=100%
 
 #### GeNIe:
 
-![ejemplo1](./img/ejemplo1.png)
+<img src="./img/ejemplo1.jpg" alt="Ejemplo1">
 
 ### Ejemplo 2
 ```
@@ -198,4 +198,4 @@ Detectar_enemigo=100%
 
 #### GeNIe:
 
-![ejemplo2](./img/ejemplo2.png)
+<img src="./img/ejemplo2.jpg" alt="Ejemplo2">
