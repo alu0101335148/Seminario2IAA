@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="St">
+			<state id="Ataca" />
+			<state id="Recoge_arma" />
+			<state id="Recoge_energia" />
+			<state id="Explorar" />
+			<state id="Huir" />
+			<state id="Detectar_enemigo" />
+			<probabilities>0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667 0.1666666666666667</probabilities>
+		</cpt>
+		<cpt id="St_1">
+			<state id="Ataca" />
+			<state id="Recoge_arma" />
+			<state id="Recoge_energia" />
+			<state id="Explorar" />
+			<state id="Huir" />
+			<state id="Detectar_enemigo" />
+			<parents>St</parents>
+			<probabilities>0.3 0.1 0.1 0.1 0.2 0.2 0.4 0 0.3 0 0 0.3 0.3 0.3 0 0.1 0 0.3 0 0.3 0.3 0.3 0.1 0 0 0.3 0.3 0.1 0.3 0 0.3 0.2 0.2 0 0 0.3</probabilities>
+		</cpt>
+		<cpt id="H">
+			<state id="Alta" />
+			<state id="Baja" />
+			<parents>St_1</parents>
+			<probabilities>0.8 0.2 0.5 0.5 0 1 0.3 0.7 0.1 0.9 0.8 0.2</probabilities>
+		</cpt>
+		<cpt id="W">
+			<state id="Armado" />
+			<state id="Desarmado" />
+			<parents>St_1</parents>
+			<probabilities>1 0 0 1 0.5 0.5 0.2 0.8 0 1 0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="OW">
+			<state id="Armado" />
+			<state id="Desarmado" />
+			<parents>St_1</parents>
+			<probabilities>0.3 0.7 0.5 0.5 0.8 0.2 0.5 0.5 0.9 0.1 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="PH">
+			<state id="Si" />
+			<state id="No" />
+			<parents>St_1</parents>
+			<probabilities>0.5 0.5 0.6 0.4 1 0 0.4 0.6 0.2 0.8 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="PW">
+			<state id="Si" />
+			<state id="No" />
+			<parents>St_1</parents>
+			<probabilities>0.5 0.5 1 0 0.6 0.4 0.4 0.6 0.4 0.6 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="HN">
+			<state id="Si" />
+			<state id="No" />
+			<parents>St_1</parents>
+			<probabilities>0.7 0.3 0.5 0.5 0.5 0.5 0.4 0.6 0.7 0.3 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="NE">
+			<state id="Si" />
+			<state id="No" />
+			<parents>St_1</parents>
+			<probabilities>1 0 0.5 0.5 0.6 0.4 0.3 0.7 0.9 0.1 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 3.0.6518.0 ACADEMIC" name="Network1">
+			<node id="St">
+				<name>St</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>542 86 577 107</position>
+				<barchart active="true" width="128" height="126" />
+			</node>
+			<node id="St_1">
+				<name>St + 1</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>539 282 585 310</position>
+				<barchart active="true" width="128" height="126" />
+			</node>
+			<node id="H">
+				<name>H</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>260 288 294 309</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="W">
+				<name>W</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>259 391 294 412</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="OW">
+				<name>OW</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>361 515 401 540</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="PH">
+				<name>PH</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>817 283 865 313</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="PW">
+				<name>PW</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>823 405 861 428</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="HN">
+				<name>HN</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>540 516 580 541</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="NE">
+				<name>NE</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>722 517 758 539</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>
