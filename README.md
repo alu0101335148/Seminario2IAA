@@ -199,3 +199,9 @@ Detectar_enemigo=100%
 #### GeNIe:
 
 <img src="./img/ejemplo2.jpg" alt="Ejemplo2">
+
+## Porcentaje de participación
+
+Airam Rafael Luque León (50%)
+
+Lucas Hernández Abreu (50%)
